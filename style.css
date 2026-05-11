@@ -349,7 +349,7 @@ body.cookie-open .back-to-top { bottom: 9.5rem; }
 /* â”€â”€ Section styles â”€â”€ */
 section { background:var(--color-bg); position:relative; z-index:1; }
 .section-alt { background:var(--color-bg-alt); }
-.section-dark { background:#0f1117; color:#f0f0f2; }
+.section-dark { background:#0E3A5F; color:#f0f0f2; }
 .section-dark h2,.section-dark h3 { color:#f0f0f2; }
 .section-dark .card-hover { background:rgba(255,255,255,.04); border-color:rgba(255,255,255,.08); }
 .section-dark .card-hover:hover { border-color:rgba(31,122,140,.25); box-shadow:0 16px 48px rgba(0,0,0,.3), 0 0 30px rgba(31,122,140,.08); }
