@@ -10,7 +10,7 @@
   <meta name="author" content="WAMOCON GmbH">
   <meta name="theme-color" content="#1F7A8C">
   <link rel="icon" href="app-icon-light.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://sirin.app/">
+  <link rel="canonical" href="https://sirin-liard.vercel.app/">
 
   <meta property="og:title" content="Sirin – Termine, die rufen.">
   <meta property="og:description" content="Die Buchungsplattform für Friseure, Physios, Beauty und Heilberufe. Eigene Domain, No-Show-Schutz und EU-Hosting – ohne Provision.">
@@ -40,9 +40,9 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Muss ich mein aktuelles System sofort kuendigen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Teste Sirin 14 Tage kostenlos parallel. Wir helfen dir beim Importieren deiner Kundendaten."}},
+      {"@type": "Question", "name": "Muss ich mein aktuelles System sofort kündigen?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Teste Sirin 14 Tage kostenlos parallel. Wir helfen dir beim Importieren deiner Kundendaten."}},
       {"@type": "Question", "name": "Wie lange dauert die Einrichtung?", "acceptedAnswer": {"@type": "Answer", "text": "Die ersten 3 Dienstleistungen und die eigene Buchungsseite sind in 5-10 Minuten live."}},
-      {"@type": "Question", "name": "Ist Sirin fuer Heilberufe geeignet?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Daten liegen auf EU-Servern in Frankfurt. Verarbeitung nach Art. 9 DSGVO. DPA auf Anfrage."}},
+      {"@type": "Question", "name": "Ist Sirin für Heilberufe geeignet?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Daten liegen auf EU-Servern in Frankfurt. Verarbeitung nach Art. 9 DSGVO. DPA auf Anfrage."}},
       {"@type": "Question", "name": "Was kostet Sirin im Vergleich zu Treatwell?", "acceptedAnswer": {"@type": "Answer", "text": "Bei 100 Buchungen/Monat a 80 EUR zahlst du bei Treatwell 1.200-2.000 EUR Provision. Sirin Pro kostet 69 EUR flat."}}
     ]
   }
@@ -102,6 +102,28 @@
     .roi-result-number { font-size:2.2rem; font-weight:900; color:var(--color-accent); }
     .pain-card { background:rgba(14,58,95,.06); border:1px solid rgba(14,58,95,.12); border-radius:20px; padding:2rem; }
     .section-dark { background:#0E3A5F !important; }
+    /* ── Process section on light/sand background ── */
+    .section-sand .process-shell {
+      background: rgba(14,58,95,.03);
+      border-color: rgba(14,58,95,.18);
+    }
+    .section-sand .process-step {
+      background: rgba(255,255,255,.8);
+      border-color: rgba(14,58,95,.15);
+      color: #0E3A5F;
+    }
+    .section-sand .process-step--active {
+      background: #fff;
+      border-color: rgba(31,122,140,.55);
+      box-shadow: 0 10px 24px rgba(14,58,95,.1), 0 0 0 1px rgba(31,122,140,.2) inset;
+    }
+    .section-sand .process-step__index { background: rgba(31,122,140,.12); color: #1F7A8C; }
+    .section-sand .process-step__title { color: #0E3A5F; }
+    .section-sand .process-step__text { color: #5A6B7B; }
+    .section-sand .process-step__hint { color: #1F7A8C; }
+    .section-sand .process-step__more { color: #5A6B7B; border-top-color: rgba(14,58,95,.12); }
+    .section-sand .process-target { color: #5A6B7B; border-top-color: rgba(14,58,95,.15); }
+    .section-sand .process-track { background: rgba(14,58,95,.1); }
     .section-dark h2,.section-dark h3 { color:#f0f0f2; }
   </style>
 </head>
@@ -131,13 +153,13 @@
       <div class="hidden md:flex items-center gap-4">
         <div class="nav-links-pill">
           <a href="#problem" class="nav-link" data-nav-section="problem">Problem</a>
-          <a href="#loesung" class="nav-link" data-nav-section="loesung">Loesung</a>
+          <a href="#loesung" class="nav-link" data-nav-section="loesung">Lösung</a>
           <a href="#preise" class="nav-link" data-nav-section="preise">Preise</a>
           <a href="#beweis" class="nav-link" data-nav-section="beweis">Beweis</a>
           <a href="#branchen" class="nav-link" data-nav-section="branchen">Branchen</a>
           <a href="#faq" class="nav-link" data-nav-section="faq">FAQ</a>
         </div>
-        <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding:10px 18px;font-size:.82rem;">Kostenlos starten</a>
+        <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="padding:10px 18px;font-size:.82rem;">Kostenlos starten</a>
         <div class="flex items-center gap-2 text-sm font-semibold" style="color:var(--color-muted);background:rgba(255,255,255,0.5);padding:6px 12px;border-radius:20px;border:1px solid rgba(14,58,95,.1);">
           <a href="index.html" style="color:#1F7A8C;text-decoration:none;">DE</a>
           <span style="opacity:0.3">|</span>
@@ -153,7 +175,7 @@
     <div class="mm-brand">Sirin</div>
     <div class="mm-grid">
       <a href="#problem" class="mm-link" onclick="closeMobileMenu()">Problem</a>
-      <a href="#loesung" class="mm-link" onclick="closeMobileMenu()">Loesung</a>
+      <a href="#loesung" class="mm-link" onclick="closeMobileMenu()">Lösung</a>
       <a href="#preise" class="mm-link" onclick="closeMobileMenu()">Preise</a>
       <a href="#beweis" class="mm-link" onclick="closeMobileMenu()">Beweis</a>
       <a href="#branchen" class="mm-link" onclick="closeMobileMenu()">Branchen</a>
@@ -173,19 +195,19 @@
     <div class="relative z-10 text-center max-w-[960px] px-5">
       <div class="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full mb-7" style="background:rgba(31,122,140,.1);border:1px solid rgba(31,122,140,.3);">
         <img src="app-icon-light.svg" alt="Sirin" style="width:16px;height:16px;">
-        <span style="font-size:.78rem;font-weight:700;color:#1F7A8C;letter-spacing:.08em;text-transform:uppercase;">Buchungsplattform fuer Dienstleister im DACH-Raum</span>
+        <span style="font-size:.78rem;font-weight:700;color:#1F7A8C;letter-spacing:.08em;text-transform:uppercase;">Buchungsplattform für Dienstleister im DACH-Raum</span>
       </div>
       <h1 class="reveal font-serif text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.08] tracking-tight mb-6" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">
         Termine, die<br><span class="gradient-text">rufen.</span>
       </h1>
       <p class="reveal text-lg md:text-xl max-w-[700px] mx-auto leading-relaxed" style="color:var(--color-muted);">
-        Sirin ist die einladende Buchungsplattform fuer Friseure, Physios, Beauty, Tieraerzte und alle, die Zeit verkaufen &mdash; mit echten Dienstleistungen statt leeren Slots. DSGVO-nativ. Kein Lock-in.
+        Sirin ist die einladende Buchungsplattform für Friseure, Physios, Beauty, Tierärzte und alle, die Zeit verkaufen &mdash; mit echten Dienstleistungen statt leeren Slots. DSGVO-nativ. Kein Lock-in.
       </p>
       <div class="reveal mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold">Kostenlos starten</a>
+        <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold">Kostenlos starten</a>
         <a href="#loesung" class="btn-outline">Live-Demo ansehen</a>
       </div>
-      <p class="reveal mt-5 text-sm" style="color:var(--color-faint);">Keine Kreditkarte noeotig &nbsp;&middot;&nbsp; Keine Provision &nbsp;&middot;&nbsp; DSGVO-konform</p>
+      <p class="reveal mt-5 text-sm" style="color:var(--color-faint);">Keine Kreditkarte nötig &nbsp;&middot;&nbsp; Keine Provision &nbsp;&middot;&nbsp; DSGVO-konform</p>
       <div class="reveal mt-12 flex flex-wrap justify-center gap-6 md:gap-10 text-sm font-semibold" style="color:var(--color-muted);">
         <span>&#9733; 4,9 &middot; 247 Bewertungen</span>
         <span style="color:rgba(14,58,95,.2);">|</span>
@@ -203,7 +225,7 @@
       <div class="text-center mb-14">
         <p class="reveal text-sm font-bold uppercase tracking-[.1em] mb-3" style="color:#E6B566;">Das kennen 530.000 Betriebe im DACH-Raum</p>
         <h2 class="reveal text-4xl md:text-6xl font-semibold leading-[1.08] tracking-tight mb-5" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">
-          Klingelt dein Handy gerade<br>waehrend der Behandlung?
+          Klingelt dein Handy gerade<br>während der Behandlung?
         </h2>
         <p class="reveal text-lg max-w-[580px] mx-auto leading-relaxed" style="color:var(--color-muted);">Unterbrechungen, No-Shows, Marktplatz-Provision &mdash; drei Probleme, die echtes Geld kosten. Jeden Tag.</p>
       </div>
@@ -248,15 +270,15 @@
   <section class="py-24 md:py-32 section-dark" id="loesung">
     <div class="max-w-[1100px] mx-auto px-5 md:px-10">
       <div class="text-center mb-14">
-        <p class="reveal text-sm font-bold uppercase tracking-[.1em] mb-3" style="color:#E6B566;">Die Loesung</p>
-        <h2 class="reveal text-3xl md:text-5xl font-semibold leading-[1.1] tracking-tight mb-5" style="font-family:'Playfair Display',Georgia,serif;">Sirin uebernimmt &mdash; du behandelst.</h2>
-        <p class="reveal text-lg max-w-[600px] mx-auto leading-relaxed" style="color:rgba(240,240,242,.7);">Sechs Kernfunktionen, die direkt auf deine groessten Schmerzen einzahlen.</p>
+        <p class="reveal text-sm font-bold uppercase tracking-[.1em] mb-3" style="color:#E6B566;">Die Lösung</p>
+        <h2 class="reveal text-3xl md:text-5xl font-semibold leading-[1.1] tracking-tight mb-5" style="font-family:'Playfair Display',Georgia,serif;">Sirin übernimmt &mdash; du behandelst.</h2>
+        <p class="reveal text-lg max-w-[600px] mx-auto leading-relaxed" style="color:rgba(240,240,242,.7);">Sechs Kernfunktionen, die direkt auf deine größten Schmerzen einzahlen.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
           <div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center text-xl" style="background:rgba(230,181,102,.15);">&#128296;</div>
           <h3 class="text-lg font-bold mb-2" style="color:#f0f0f2;">Dienstleistungen, keine Slots</h3>
-          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Dein Haarschnitt hat 45 Minuten, 10 Min Puffer, kostet 58 EUR und gehoert zu Julia &mdash; nicht zu einem generischen Kalender-Block.</p>
+          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Dein Haarschnitt hat 45 Minuten, 10 Min Puffer, kostet 58 EUR und gehört zu Julia &mdash; nicht zu einem generischen Kalender-Block.</p>
         </div>
         <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
           <div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center text-xl" style="background:rgba(230,181,102,.15);">&#127760;</div>
@@ -266,22 +288,22 @@
         <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
           <div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center text-xl" style="background:rgba(230,181,102,.15);">&#128276;</div>
           <h3 class="text-lg font-bold mb-2" style="color:#f0f0f2;">No-Show-Schutz</h3>
-          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Automatische Reminder 48h, 24h, 2h vor dem Termin. Optional: Anzahlung via Stripe. No-Show-Quote sinkt auf unter 2 %.</p>
+          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Automatische Reminder 48h, 24h, 2h vor dem Termin. No-Show-Quote sinkt auf unter 2 %.</p>
         </div>
         <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
           <div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center text-xl" style="background:rgba(230,181,102,.15);">&#9889;</div>
-          <h3 class="text-lg font-bold mb-2" style="color:#f0f0f2;">Lueckenfueller</h3>
+          <h3 class="text-lg font-bold mb-2" style="color:#f0f0f2;">Lückenfüller</h3>
           <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Stornierung um 16:20 Uhr? Deine Wartelisten-Kunden bekommen sofort eine Benachrichtigung &mdash; mit freiem Slot und optionalem Rabatt.</p>
         </div>
         <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
           <div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center text-xl" style="background:rgba(230,181,102,.15);">&#127466;&#127482;</div>
           <h3 class="text-lg font-bold mb-2" style="color:#f0f0f2;">EU-Hosting, DSGVO-nativ</h3>
-          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Daten in Frankfurt. Art. 9-konform fuer Heilberufe. Kein US-Server. Supabase Frankfurt &amp; Vercel fra1.</p>
+          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Daten in Frankfurt. Art. 9-konform für Heilberufe. Kein US-Server. Supabase Frankfurt &amp; Vercel fra1.</p>
         </div>
         <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
           <div class="w-10 h-10 rounded-xl mb-4 flex items-center justify-center text-xl" style="background:rgba(230,181,102,.15);">&#128176;</div>
           <h3 class="text-lg font-bold mb-2" style="color:#f0f0f2;">Kein Provisions-Modell</h3>
-          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Flat Fee. Kein Anteil an deinen Einnahmen. Was du verdienst, gehoert dir. Ab 29 EUR/Monat. Alles inklusive.</p>
+          <p style="color:rgba(240,240,242,.65);font-size:.9rem;line-height:1.7;">Flat Fee. Kein Anteil an deinen Einnahmen. Was du verdienst, gehört dir. Ab 29 EUR/Monat. Alles inklusive.</p>
         </div>
       </div>
     </div>
@@ -303,7 +325,7 @@
           <article class="process-step process-step--active" tabindex="0">
             <div class="process-step__index">01</div>
             <h3 class="process-step__title">Dienstleistungen anlegen</h3>
-            <p class="process-step__text">Leistung, Dauer, Preis, Mitarbeiter, Puffer &mdash; fertige Vorlagen fuer Friseur, Physio, Beauty.</p>
+            <p class="process-step__text">Leistung, Dauer, Preis, Mitarbeiter, Puffer &mdash; fertige Vorlagen für Friseur, Physio, Beauty.</p>
             <p class="process-step__hint">Zum Aufklappen klicken</p>
             <div class="process-step__more">Branchenvorlagen machen den Start noch schneller. Deine ersten Dienstleistungen sind in 2 Minuten bereit &mdash; ohne technisches Wissen.</div>
           </article>
@@ -312,17 +334,17 @@
             <h3 class="process-step__title">Buchungsseite teilen</h3>
             <p class="process-step__text">Link auf Instagram, Website, Visitenkarte. QR-Code zum Ausdrucken inklusive.</p>
             <p class="process-step__hint">Zum Aufklappen klicken</p>
-            <div class="process-step__more">Deine Buchungsseite ist unter sirin.app/deinname sofort live &mdash; mit deinem Logo, deinen Farben und deinen Leistungen. Im Starter-Tarif auch unter deiner eigenen Domain.</div>
+            <div class="process-step__more">Deine Buchungsseite ist unter sirin-liard.vercel.app/deinname sofort live &mdash; mit deinem Logo, deinen Farben und deinen Leistungen. Im Starter-Tarif auch unter deiner eigenen Domain.</div>
           </article>
           <article class="process-step" tabindex="0">
             <div class="process-step__index">03</div>
             <h3 class="process-step__title">Termine empfangen</h3>
-            <p class="process-step__text">Kunden buchen selbst. Du bekommst die Bestaetigung &mdash; und kannst weiterarbeiten.</p>
+            <p class="process-step__text">Kunden buchen selbst. Du bekommst die Bestätigung &mdash; und kannst weiterarbeiten.</p>
             <p class="process-step__hint">Zum Aufklappen klicken</p>
-            <div class="process-step__more">Sirin koordiniert: Bestaetigung an dich, Erinnerung an den Kunden 48h/24h/2h vor dem Termin. Kein Telefonanruf noetig.</div>
+            <div class="process-step__more">Sirin koordiniert: Bestätigung an dich, Erinnerung an den Kunden 48h/24h/2h vor dem Termin. Kein Telefonanruf nötig.</div>
           </article>
         </div>
-        <p class="process-target"><strong>Ziel:</strong> Weniger Unterbrechungen, weniger No-Shows, mehr Buchungen &mdash; ohne Marktplatz-Abhaengigkeit.</p>
+        <p class="process-target"><strong>Ziel:</strong> Weniger Unterbrechungen, weniger No-Shows, mehr Buchungen &mdash; ohne Marktplatz-Abhängigkeit.</p>
       </div>
     </div>
   </section>
@@ -336,23 +358,23 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
         <div class="reveal testimonial-card">
           <div class="flex gap-1 mb-4" style="color:#E6B566;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="mb-5 leading-relaxed" style="color:var(--color-muted);font-style:italic;">"Ich nehme keine Terminanrufe mehr waehrend der Arbeit an. Meine Kunden buchen selbst &mdash; und kommen zuverlaessiger als je zuvor."</p>
+          <p class="mb-5 leading-relaxed" style="color:var(--color-muted);font-style:italic;">"Ich nehme keine Terminanrufe mehr während der Arbeit an. Meine Kunden buchen selbst &mdash; und kommen zuverlässiger als je zuvor."</p>
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style="background:rgba(31,122,140,.15);color:#1F7A8C;">SK</div>
             <div>
               <p class="font-bold text-sm" style="color:#0E3A5F;">Sarah K.</p>
-              <p class="text-xs" style="color:var(--color-muted);">Friseurmeisterin, Muenchen</p>
+              <p class="text-xs" style="color:var(--color-muted);">Friseurmeisterin, München</p>
             </div>
           </div>
         </div>
         <div class="reveal testimonial-card">
           <div class="flex gap-1 mb-4" style="color:#E6B566;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="mb-5 leading-relaxed" style="color:var(--color-muted);font-style:italic;">"DSGVO war mein groesstes Problem mit anderen Tools. Sirin laeuft auf EU-Servern &mdash; das war der Dealmaker fuer meine Praxis."</p>
+          <p class="mb-5 leading-relaxed" style="color:var(--color-muted);font-style:italic;">"DSGVO war mein größtes Problem mit anderen Tools. Sirin läuft auf EU-Servern &mdash; das war der Dealmaker für meine Praxis."</p>
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style="background:rgba(31,122,140,.15);color:#1F7A8C;">BH</div>
             <div>
-              <p class="font-bold text-sm" style="color:#0E3A5F;">Bjoern H.</p>
-              <p class="text-xs" style="color:var(--color-muted);">Physiotherapeut, Zuerich</p>
+              <p class="font-bold text-sm" style="color:#0E3A5F;">Björn H.</p>
+              <p class="text-xs" style="color:var(--color-muted);">Physiotherapeut, Zürich</p>
             </div>
           </div>
         </div>
@@ -379,7 +401,7 @@
         </div>
         <div class="p-6 rounded-2xl bg-white" style="border:1px solid var(--color-border);">
           <div class="text-4xl font-black mb-2" style="color:#0E3A5F;" data-target="38" data-suffix="%">0</div>
-          <span class="block text-sm font-semibold" style="color:var(--color-muted);">Mehr Buchungen ausserhalb der Oeffnungszeiten</span>
+          <span class="block text-sm font-semibold" style="color:var(--color-muted);">Mehr Buchungen außerhalb der Öffnungszeiten</span>
         </div>
         <div class="p-6 rounded-2xl bg-white" style="border:1px solid var(--color-border);">
           <div class="text-4xl font-black mb-2" style="color:#E6B566;">&lt;2%</div>
@@ -393,7 +415,7 @@
     <div class="max-w-[1100px] mx-auto px-5 md:px-10">
       <div class="text-center mb-8">
         <p class="reveal text-sm font-bold uppercase tracking-[.1em] mb-3" style="color:#E6B566;">Preise</p>
-        <h2 class="reveal text-3xl md:text-5xl font-semibold leading-[1.1] tracking-tight mb-5" style="font-family:'Playfair Display',Georgia,serif;">Faires Flat-Pricing. Keine Provision. Keine Ueberraschungen.</h2>
+        <h2 class="reveal text-3xl md:text-5xl font-semibold leading-[1.1] tracking-tight mb-5" style="font-family:'Playfair Display',Georgia,serif;">Faires Flat-Pricing. Keine Provision. Keine Überraschungen.</h2>
       </div>
       <div class="reveal text-center mb-12">
         <div class="inline-block px-6 py-4 rounded-2xl" style="background:rgba(230,181,102,.12);border:1px solid rgba(230,181,102,.3);">
@@ -413,7 +435,7 @@
             <li class="flex gap-2 items-start"><span style="color:#dc2626;">&#10007;</span> Eigene Domain</li>
             <li class="flex gap-2 items-start"><span style="color:#dc2626;">&#10007;</span> SMS-Reminder</li>
           </ul>
-          <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-5 rounded-xl font-semibold text-sm" style="background:rgba(14,58,95,.08);color:#0E3A5F;text-decoration:none;">Kostenlos starten</a>
+          <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-5 rounded-xl font-semibold text-sm" style="background:rgba(14,58,95,.08);color:#0E3A5F;text-decoration:none;">Kostenlos starten</a>
         </div>
         <div class="reveal price-card">
           <p class="text-sm font-bold uppercase tracking-wider mb-2" style="color:var(--color-muted);">Starter</p>
@@ -425,9 +447,9 @@
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Eigene Domain</li>
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> E-Mail-Reminder</li>
             <li class="flex gap-2 items-start"><span style="color:#dc2626;">&#10007;</span> SMS-Reminder</li>
-            <li class="flex gap-2 items-start"><span style="color:#dc2626;">&#10007;</span> Stripe-Anzahlung</li>
+            
           </ul>
-          <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-5 rounded-xl font-semibold text-sm" style="background:rgba(14,58,95,.08);color:#0E3A5F;text-decoration:none;">Jetzt starten</a>
+          <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="block text-center py-3 px-5 rounded-xl font-semibold text-sm" style="background:rgba(14,58,95,.08);color:#0E3A5F;text-decoration:none;">Jetzt starten</a>
         </div>
         <div class="reveal price-card price-card--popular">
           <div class="price-badge">Beliebt</div>
@@ -439,15 +461,15 @@
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Unbegrenzte Buchungen</li>
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Eigene Domain</li>
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> E-Mail &amp; SMS-Reminder</li>
-            <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Stripe-Anzahlung</li>
+            <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Pufferzeiten &amp; Ressourcen</li>
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Multi-Standort</li>
           </ul>
-          <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold block text-center py-3 px-5 rounded-xl font-semibold text-sm">Jetzt starten</a>
+          <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold block text-center py-3 px-5 rounded-xl font-semibold text-sm">Jetzt starten</a>
         </div>
         <div class="reveal price-card">
           <p class="text-sm font-bold uppercase tracking-wider mb-2" style="color:var(--color-muted);">Business</p>
           <div class="text-4xl font-black mb-1" style="color:#0E3A5F;">149 <span class="text-xl font-semibold" style="color:var(--color-muted);">EUR/Mo.</span></div>
-          <p class="text-sm mb-6" style="color:var(--color-muted);">Fuer wachsende Ketten</p>
+          <p class="text-sm mb-6" style="color:var(--color-muted);">Für wachsende Ketten</p>
           <ul class="space-y-3 text-sm mb-8" style="color:#0E3A5F;">
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Unbegrenzte Mitarbeiter</li>
             <li class="flex gap-2 items-start"><span style="color:#16a34a;">&#10003;</span> Unbegrenzte Buchungen</li>
@@ -459,7 +481,7 @@
           <a href="mailto:hallo@sirin.app" class="block text-center py-3 px-5 rounded-xl font-semibold text-sm" style="background:rgba(14,58,95,.08);color:#0E3A5F;text-decoration:none;">Kontakt aufnehmen</a>
         </div>
       </div>
-      <p class="reveal text-center text-sm mt-6" style="color:rgba(240,240,242,.5);">Alle Preise inkl. MwSt. &middot; Jederzeit kuendbar &middot; Keine Kreditkarte fuer Free-Einstieg</p>
+      <p class="reveal text-center text-sm mt-6" style="color:rgba(240,240,242,.5);">Alle Preise inkl. MwSt. &middot; Jederzeit kündbar &middot; Keine Kreditkarte für Free-Einstieg</p>
     </div>
   </section>
 
@@ -530,7 +552,7 @@
               </div>
             </div>
           </div>
-          <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="width:100%;justify-content:center;font-size:.95rem;">Jetzt 14 Tage kostenlos testen</a>
+          <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="width:100%;justify-content:center;font-size:.95rem;">Jetzt 14 Tage kostenlos testen</a>
         </div>
       </div>
     </div>
@@ -559,9 +581,9 @@
             <tr><td>EU-Hosting (Frankfurt)</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td></tr>
             <tr><td>DSGVO Art. 9 (Heilberufe)</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-warn">&#9888;</span></td><td><span class="check-no">&#10007;</span></td></tr>
             <tr><td>Pufferzeiten</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-yes">&#10003;</span></td><td><span class="check-yes">&#10003;</span></td></tr>
-            <tr><td>No-Show-Anzahlung</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td></tr>
+            <tr><td>Automatische Reminder</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-warn">&#9888;</span></td><td><span class="check-no">&#10007;</span></td></tr>
             <tr><td>Kein Provisions-Modell</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-yes">&#10003;</span></td><td><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td></tr>
-            <tr><td>Lueckenfuell-Logik</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-warn">&#9888;</span></td><td><span class="check-warn">&#9888;</span></td></tr>
+            <tr><td>Lückenfüll-Logik</td><td class="sirin-col"><span class="check-yes">&#10003;</span></td><td><span class="check-no">&#10007;</span></td><td><span class="check-warn">&#9888;</span></td><td><span class="check-warn">&#9888;</span></td></tr>
             <tr style="background:rgba(14,58,95,.03);"><td style="font-weight:700;">Preis / Monat</td><td class="sirin-col" style="font-weight:700;color:#1F7A8C;">29-149 EUR</td><td>10-16 USD</td><td>79+ EUR</td><td style="color:#dc2626;font-weight:600;">15-25%</td></tr>
           </tbody>
         </table>
@@ -578,26 +600,26 @@
       <div class="reveal flex flex-wrap gap-2 justify-center mb-10">
         <button class="ind-tab active" data-tab="friseur">Friseure &amp; Beauty</button>
         <button class="ind-tab" data-tab="physio">Physio &amp; Heilberufe</button>
-        <button class="ind-tab" data-tab="tierarzt">Tieraerzte</button>
+        <button class="ind-tab" data-tab="tierarzt">Tierärzte</button>
         <button class="ind-tab" data-tab="coaches">Coaches &amp; Trainer</button>
       </div>
       <div class="ind-content active" id="tab-friseur">
         <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h3 class="text-2xl md:text-3xl font-semibold mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">Sirin kennt Friseure.</h3>
-            <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Haarschnitt. Tonung. Dauerwelle. Balayage. Jede Leistung mit ihrer eigenen Dauer, ihrem Preis, ihrer Stylistin und ihrem Puffer. Kein Slot-Gedanke mehr.</p>
+            <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Haarschnitt. Tönung. Dauerwelle. Balayage. Jede Leistung mit ihrer eigenen Dauer, ihrem Preis, ihrer Stylistin und ihrem Puffer. Kein Slot-Gedanke mehr.</p>
             <ul class="space-y-3 text-sm" style="color:#0E3A5F;">
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Stuhl- und Waschplatz-Zuordnung</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Farbmischzeit als separate Ressource buchbar</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Wiederholungsbuchungen (z.B. alle 6 Wochen)</li>
-              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> No-Show-Anzahlung fuer Faerbungen ab X EUR</li>
+              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Erinnerungen für alle Leistungen</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Instagram-Link direkt auf Buchungsseite</li>
-              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> QR-Code fuer Schaufenster und Visitenkarte</li>
+              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> QR-Code für Schaufenster und Visitenkarte</li>
             </ul>
           </div>
           <div class="rounded-2xl p-8" style="background:linear-gradient(135deg,rgba(31,122,140,.08),rgba(230,181,102,.08));border:1px solid rgba(31,122,140,.15);">
-            <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Nimm nie wieder einen Anruf waehrend der Behandlung an. Deine Kunden buchen selbst &mdash; und kommen zuverlaessiger."</p>
-            <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Einrichtung fuer Friseure: 5 Minuten</a>
+            <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Nimm nie wieder einen Anruf während der Behandlung an. Deine Kunden buchen selbst &mdash; und kommen zuverlässiger."</p>
+            <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Einrichtung für Friseure: 5 Minuten</a>
           </div>
         </div>
       </div>
@@ -605,9 +627,9 @@
         <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h3 class="text-2xl md:text-3xl font-semibold mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">Sirin kennt Heilberufe.</h3>
-            <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Patientendaten in Frankfurt, nicht in San Francisco. Sirin ist Art-9-konform fuer sensible Gesundheitsdaten &mdash; ohne Marktplatz-Abhaengigkeit.</p>
+            <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Patientendaten in Frankfurt, nicht in San Francisco. Sirin ist Art-9-konform für sensible Gesundheitsdaten &mdash; ohne Marktplatz-Abhängigkeit.</p>
             <ul class="space-y-3 text-sm" style="color:#0E3A5F;">
-              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> DSGVO Art. 9 konform fuer Patientendaten</li>
+              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> DSGVO Art. 9 konform für Patientendaten</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> EU-Server Frankfurt, kein US-Transfer</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Mehrere Therapeuten, ein Kalender</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> DPA (Auftragsverarbeitungsvertrag) auf Anfrage</li>
@@ -616,7 +638,7 @@
           </div>
           <div class="rounded-2xl p-8" style="background:linear-gradient(135deg,rgba(31,122,140,.08),rgba(230,181,102,.08));border:1px solid rgba(31,122,140,.15);">
             <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Patientendaten in Frankfurt, nicht in San Francisco. Sirin ist Art-9-konform und kostet keine Provision."</p>
-            <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Demo fuer Heilberufe vereinbaren</a>
+            <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Demo für Heilberufe vereinbaren</a>
           </div>
         </div>
       </div>
@@ -624,17 +646,17 @@
         <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h3 class="text-2xl md:text-3xl font-semibold mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">Sirin kennt Tierarztpraxen.</h3>
-            <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Notfalltermin oder Routineimpfung &mdash; Sirin unterscheidet Behandlungstypen, weist Raeume zu und haelt die Warteliste aktuell.</p>
+            <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Notfalltermin oder Routineimpfung &mdash; Sirin unterscheidet Behandlungstypen, weist Räume zu und hält die Warteliste aktuell.</p>
             <ul class="space-y-3 text-sm" style="color:#0E3A5F;">
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Termin-Typen: Notfall, Vorsorge, Impfung</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Behandlungsraum-Zuordnung</li>
-              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> DSGVO-konform fuer Patientendaten</li>
+              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> DSGVO-konform für Patientendaten</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Online-Buchung 24/7</li>
             </ul>
           </div>
           <div class="rounded-2xl p-8" style="background:linear-gradient(135deg,rgba(31,122,140,.08),rgba(230,181,102,.08));border:1px solid rgba(31,122,140,.15);">
-            <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Keine Warteschlange am Telefon mehr. Tierbesitzer buchen selbst &mdash; mit allen noetigen Infos zur Behandlung."</p>
-            <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Kostenlos ausprobieren</a>
+            <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Keine Warteschlange am Telefon mehr. Tierbesitzer buchen selbst &mdash; mit allen nötigen Infos zur Behandlung."</p>
+            <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Kostenlos ausprobieren</a>
           </div>
         </div>
       </div>
@@ -644,15 +666,15 @@
             <h3 class="text-2xl md:text-3xl font-semibold mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">Sirin kennt Coaches &amp; Trainer.</h3>
             <p class="mb-6 leading-relaxed" style="color:var(--color-muted);">Einzelcoaching, Gruppentraining, Online-Session &mdash; Sirin bucht jedes Format mit der richtigen Dauer und dem richtigen Medium.</p>
             <ul class="space-y-3 text-sm" style="color:#0E3A5F;">
-              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Online- &amp; Praesenz-Formate</li>
+              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Online- &amp; Präsenz-Formate</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Gruppen- &amp; Einzeltermine</li>
-              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Vorauszahlung via Stripe</li>
+              <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Kalender-Sync &amp; Buchungsbestätigung</li>
               <li class="flex gap-3 items-start"><span style="color:#16a34a;">&#10003;</span> Kalender-Sync (Google, Outlook)</li>
             </ul>
           </div>
           <div class="rounded-2xl p-8" style="background:linear-gradient(135deg,rgba(31,122,140,.08),rgba(230,181,102,.08));border:1px solid rgba(31,122,140,.15);">
-            <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Deine Buchungsseite ist dein persoenliches Schauffenster &mdash; professionell, ohne technischen Aufwand."</p>
-            <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Jetzt kostenlos testen</a>
+            <p class="text-xl font-medium italic mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">"Deine Buchungsseite ist dein persönliches Schaufenster &mdash; professionell, ohne technischen Aufwand."</p>
+            <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:.9rem;padding:12px 24px;">Jetzt kostenlos testen</a>
           </div>
         </div>
       </div>
@@ -663,12 +685,12 @@
     <div class="max-w-[860px] mx-auto px-5 md:px-10">
       <div class="text-center mb-10">
         <p class="reveal text-sm font-bold uppercase tracking-[.1em] mb-3" style="color:#E6B566;">FAQ</p>
-        <h2 class="reveal text-3xl md:text-5xl font-semibold tracking-tight mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">Haeufige Fragen</h2>
+        <h2 class="reveal text-3xl md:text-5xl font-semibold tracking-tight mb-4" style="color:#0E3A5F;font-family:'Playfair Display',Georgia,serif;">Häufige Fragen</h2>
       </div>
       <div id="faqList" class="rounded-2xl bg-white overflow-hidden" style="border:1.5px solid var(--color-border);">
         <div class="faq-item">
           <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
-            <span class="font-semibold" style="color:#0E3A5F;">Muss ich mein aktuelles System sofort kuendigen?</span>
+            <span class="font-semibold" style="color:#0E3A5F;">Muss ich mein aktuelles System sofort kündigen?</span>
             <span class="faq-question__icon relative w-5 h-5 flex-shrink-0"></span>
           </button>
           <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Nein. Teste Sirin 14 Tage kostenlos parallel zu deinem bestehenden System. Wir helfen dir beim Importieren deiner Kundendaten &mdash; kein Datenverlust.</div>
@@ -678,28 +700,28 @@
             <span class="font-semibold" style="color:#0E3A5F;">Wie lange dauert die Einrichtung?</span>
             <span class="faq-question__icon relative w-5 h-5 flex-shrink-0"></span>
           </button>
-          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Die ersten 3 Dienstleistungen und deine eigene Buchungsseite sind in 5&ndash;10 Minuten live. Branchenvorlagen fuer Friseure, Physios und mehr machen es noch schneller.</div>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Die ersten 3 Dienstleistungen und deine eigene Buchungsseite sind in 5&ndash;10 Minuten live. Branchenvorlagen für Friseure, Physios und mehr machen es noch schneller.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
             <span class="font-semibold" style="color:#0E3A5F;">Was passiert mit meinen Kundendaten, wenn ich kuendige?</span>
             <span class="faq-question__icon relative w-5 h-5 flex-shrink-0"></span>
           </button>
-          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Du kannst alle Daten jederzeit exportieren. Wir loeschen sie DSGVO-konform nach Kuendigung. Kein Lock-in &mdash; deine Daten gehoeren dir.</div>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Du kannst alle Daten jederzeit exportieren. Wir löschen sie DSGVO-konform nach Kündigung. Kein Lock-in &mdash; deine Daten gehoeren dir.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
             <span class="font-semibold" style="color:#0E3A5F;">Gibt es eine Vertragsbindung?</span>
             <span class="faq-question__icon relative w-5 h-5 flex-shrink-0"></span>
           </button>
-          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Nein. Monatlich kuendbar. Jederzeit. Keine Mindestlaufzeit, keine Kuendigungsfristen.</div>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Nein. Monatlich kündbar. Jederzeit. Keine Mindestlaufzeit, keine Kündigungsfristen.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
-            <span class="font-semibold" style="color:#0E3A5F;">Ist Sirin fuer Heilberufe (Physio, Heilpraktiker) geeignet?</span>
+            <span class="font-semibold" style="color:#0E3A5F;">Ist Sirin für Heilberufe (Physio, Heilpraktiker) geeignet?</span>
             <span class="faq-question__icon relative w-5 h-5 flex-shrink-0"></span>
           </button>
-          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Ja. Daten liegen auf EU-Servern in Frankfurt. Verarbeitung nach Art. 9 DSGVO fuer besondere Kategorien personenbezogener Daten. DPA auf Anfrage erhaeltlich.</div>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Ja. Daten liegen auf EU-Servern in Frankfurt. Verarbeitung nach Art. 9 DSGVO für besondere Kategorien personenbezogener Daten. DPA auf Anfrage erhältlich.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
@@ -722,16 +744,16 @@
   <section class="py-28 section-dark" id="final-cta">
     <div class="max-w-[800px] mx-auto px-5 md:px-10 text-center">
       <p class="reveal text-sm font-bold uppercase tracking-[.1em] mb-4" style="color:#E6B566;">Bereit loszulegen?</p>
-      <h2 class="reveal text-4xl md:text-6xl font-semibold leading-[1.1] mb-5" style="font-family:'Playfair Display',Georgia,serif;">Dein naechster Termin wartet schon.</h2>
+      <h2 class="reveal text-4xl md:text-6xl font-semibold leading-[1.1] mb-5" style="font-family:'Playfair Display',Georgia,serif;">Dein nächster Termin wartet schon.</h2>
       <p class="reveal text-lg max-w-[560px] mx-auto mb-10" style="color:rgba(240,240,242,.7);">Richte deine Buchungsseite in 5 Minuten ein. Keine Kreditkarte. Kein Risiko.</p>
       <div class="reveal flex flex-col sm:flex-row gap-4 justify-center mb-8">
-        <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:1rem;padding:18px 42px;">Kostenlos starten &mdash; dauert 5 Minuten</a>
+        <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="font-size:1rem;padding:18px 42px;">Kostenlos starten &mdash; dauert 5 Minuten</a>
       </div>
-      <p class="reveal text-sm" style="color:rgba(240,240,242,.45);">Keine Kreditkarte &nbsp;&middot;&nbsp; Jederzeit kuendbar &nbsp;&middot;&nbsp; Daten in Deutschland</p>
+      <p class="reveal text-sm" style="color:rgba(240,240,242,.45);">Keine Kreditkarte &nbsp;&middot;&nbsp; Jederzeit kündbar &nbsp;&middot;&nbsp; Daten in Deutschland</p>
       <div class="reveal mt-10 flex flex-wrap justify-center gap-6 text-sm" style="color:rgba(240,240,242,.5);">
         <span>&#127466;&#127482; EU-Hosting</span>
         <span>&#128274; DSGVO-konform</span>
-        <span>&#128179; Stripe Certified</span>
+        <span>&#10003; Keine Provision</span>
         <span>&#127970; Made in DACH</span>
       </div>
     </div>
@@ -742,10 +764,10 @@
       <img src="app-icon-light.svg" alt="Sirin" style="width:20px;height:20px;opacity:.9;">
       <span style="font-weight:800;font-size:1.1rem;color:#f0f0f2;letter-spacing:-.02em;">Sirin</span>
     </div>
-    <p style="font-size:.9rem;margin-bottom:6px;">Die Buchungsplattform fuer Friseure, Physios, Beauty und Heilberufe im DACH-Raum.</p>
+    <p style="font-size:.9rem;margin-bottom:6px;">Die Buchungsplattform für Friseure, Physios, Beauty und Heilberufe im DACH-Raum.</p>
     <p style="font-size:.8rem;margin-bottom:16px;color:rgba(142,159,171,.6);">WAMOCON GmbH &nbsp;&middot;&nbsp; EU-Hosting Frankfurt &nbsp;&middot;&nbsp; DSGVO-konform</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:.85rem;">
-      <a href="https://sirin.app/" target="_blank" rel="noopener noreferrer" style="color:#1F7A8C;text-decoration:none;">App oeffnen</a>
+      <a href="https://sirin-liard.vercel.app/" target="_blank" rel="noopener noreferrer" style="color:#1F7A8C;text-decoration:none;">App öffnen</a>
       <a href="impressum.html" style="color:#8e9fab;text-decoration:none;">Impressum</a>
       <a href="agb.html" style="color:#8e9fab;text-decoration:none;">AGB</a>
       <a href="datenschutz.html" style="color:#8e9fab;text-decoration:none;">Datenschutz</a>
@@ -759,7 +781,7 @@
   <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis">
     <div class="cookie-banner__inner">
       <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.45rem;">Hinweis zu Cookies &amp; lokalem Speicher</h3>
-      <p style="font-size:.92rem;line-height:1.6;color:#4d4d55;">Sirin nutzt essentielle Cookies fuer die Funktionsfaehigkeit der Seite. Kein Werbe-Tracker. Alle Daten bleiben in der EU.</p>
+      <p style="font-size:.92rem;line-height:1.6;color:#4d4d55;">Sirin nutzt essentielle Cookies für die Funktionsfaehigkeit der Seite. Kein Werbe-Tracker. Alle Daten bleiben in der EU.</p>
       <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:1rem;flex-wrap:wrap;">
         <button class="cookie-banner__btn cookie-banner__btn--reject" data-cookie-action="reject">Schliessen</button>
         <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie-action="accept">Verstanden</button>
