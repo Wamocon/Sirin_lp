@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Sirin App Icon">
+  <defs>
+    <linearGradient id="bgSirin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E3A5F"/>
+      <stop offset="100%" stop-color="#1F7A8C"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgSirin)"/>
+  <!-- Stylized S as double wave -->
+  <path d="M160 180 C 210 120, 300 120, 352 180 C 300 235, 210 235, 160 300 C 210 360, 300 360, 352 330"
+        fill="none" stroke="#F5EFE6" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Gold accent dot -->
+  <circle cx="352" cy="350" r="22" fill="#E6B566"/>
+</svg>
